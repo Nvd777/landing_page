@@ -1,0 +1,163 @@
+                /* Product Landing Page */
+                    /* CSS Styling */
+            /* Gymnastic Class Landing Page */
+
+                    
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap')
+
+;root{
+    --primary-color: #334456;
+    --primary-color-dark: #141420;
+    --secondary-color: #ff97ba;
+    --white: #ffffff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: "Montserrat",sans-serif;
+    background-color: #334456;
+    overflow-x: hidden;
+}
+.header_container{
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+}
+nav{
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav_logo a{
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #ff97ba;;
+}
+.nav_links{
+    list-style:none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.link a{
+    position: relative;
+    padding-bottom: 5px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #141420;
+}
+.link a::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ff97ba;
+    transition: 0.3s;
+}
+.link a:hover::after{
+    width: 100%;
+}
+.header_content{
+    padding: 5rem 0;
+}
+h1{
+    font-size: 8rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+h2{
+    margin-bottom: 2rem;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+.banner_1{
+    max-width: 400px;
+    margin-left: 5rem;
+    padding: 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #141420;
+    background-color: #ffffff;
+}
+.btn{
+    display: inline-block;
+    padding: 1rem;
+    outline: none;
+    border: none;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #ff97ba;
+    cursor: pointer;
+}
+.header_image{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: calc(50% - 5rem);
+    padding-top: 6rem;
+    background-color: #ffffff;
+    z-index: -1;
+    overflow: hidden;
+}
+.header_image img{
+    width: 100%;
+    display: flex;
+    max-width: 600px;
+    /* height: 100%; */
+}
+.header_socials{
+    right: 0;
+    top: 50%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.header_socials span a{
+    font-size: 2rem;
+    color: #334456;
+    transition: 0.3s;
+}
+.header_socials span:hover a{
+    color: #ff97ba;
+}
+.types_container{
+    background-color: #141420;
+}
+.types_grid{
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+.types_card{
+    padding: 1rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+.types_card h4{
+    font-size: 3rem;
+    color: #ffffff;
+}
+.types_card p{
+    padding-bottom: 1rem;
+    color: #ffffff;
+    border-bottom: 5px solid #334456;
+}
+
